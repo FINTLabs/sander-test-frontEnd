@@ -1,18 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Main from "./Main"
 import './App.css';
+import FakturaProvider from "./Data";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-      <Main/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <FakturaProvider>
+                <Main/>
+            </FakturaProvider>
+        </div>
+    );
 }
-
 export default App;

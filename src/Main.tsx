@@ -2,6 +2,7 @@ import React, {useContext, useEffect} from "react";
 import {Button, Typography} from "@mui/material";
 import CarTable from "./CarTable"
 import {FakturaContext} from "./Data/FakturaContext";
+import Faktura from "./App";
 const Main = () =>{
     const {page} = useContext(FakturaContext)
     useEffect(() => {
